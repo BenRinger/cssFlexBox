@@ -10,6 +10,60 @@ body{
 .wrapper{
     width: 100%;
     max-width: 960px;
-    margin: 0 auto;
+}
+
+.flex-container{
+    height: 600px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-flow: column;
+    /* align-items: center; */
+    justify-content: center;
+    
+    
+}
+
+.box{
+    height: 100px;
+    /* /* flex: grow shrink basis  */
+    flex: 0 0 100px; 
+    /* min-width: 200px; */
+}
+#blocks{
+    display:flex;
+    margin:10px;
+    justify-content: space-between;
+}
+
+#blocks div{
+    flex: 0 0 100px;
+    padding: 40px 0;
+    text-align: center;
+    background: #ccc;
+}
+
+.one{order: -3;}
+.two{order: 2;}
+.three{order: 1;}
+.four{order: 0;}
+
+.one{
+    background: red;
+    /* flex-grow: 5; */
+    /* flex-shrink: 1; */
+    /* flex-basis: 100px; */
+    }
+
+.two{
+    background: blue;
+    /* flex-grow: 4; */
+    /* flex-shrink: 2; */
+    /* flex-basis: 200px; */
+}
+.three{
+    background: green;
+    /* flex-grow: 3; */
+    /* flex-shrink: 3; */
+    /* flex-basis:300px; */
 }
 
